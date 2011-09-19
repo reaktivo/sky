@@ -1,0 +1,7 @@
+<% color_sets.forEach(function(color_set){ %>
+  <div class="color_set">
+    <% color_set.forEach(function(color){ %>
+      <div class="color" style="background-color:<%= color %>">&nbsp;</div>
+    <% }) %>
+  </div>
+<% }) %>

@@ -1,0 +1,1 @@
+rsync -avzP --exclude=".DS_Store" ./* armonia:sky/
