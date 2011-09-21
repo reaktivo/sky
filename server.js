@@ -35,8 +35,8 @@ var fs = require('fs');
 var sky = require('./sky');
 require('./mootools-1.4.0');
 
-//var webcam_url = 'http://webcamsdemexico.net/cancun1/live.jpg';
-var webcam_url = 'http://warp2.playa.info/twopalmscam/image.jpg?r=69478972';
+var webcam_url = 'http://webcamsdemexico.net/cancun1/live.jpg';
+//var webcam_url = 'http://warp2.playa.info/twopalmscam/image.jpg?r=69478972';
 var colors_file = 'colors.json';
 
 var color_sets = [];
