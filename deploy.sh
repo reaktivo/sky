@@ -1,1 +1,1 @@
-rsync -avzP --exclude=".DS_Store" ./* armonia:sky/
+rsync -avzP --exclude=".DS_Store" --delete-after --exclude="tmp/*" --exclude="colors.json" ./* armonia:sky/
