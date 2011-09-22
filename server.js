@@ -62,7 +62,8 @@ io.sockets.on('connection', function(socket) {
   });
 });
 
-refreshColors.periodical(1000 * 60 * 5);
+// one screen shot every hour, every day
+refreshColors.periodical(1000 * 60 * 60);
 refreshColors();
 
 app.get('/', function(req, res){
