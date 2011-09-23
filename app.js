@@ -37,14 +37,13 @@ require('./mootools-1.4.0');
 
 var webcam_url = 'http://webcamsdemexico.net/cancun1/live.jpg';
 //var webcam_url = 'http://warp2.playa.info/twopalmscam/image.jpg?r=69478972';
-var colors_file = 'colors.json';
-
-var color_sets = [];
+var color_file = 'colors.json';
+var color_sets = sky.getColors(color_file);
 
 var refreshColors = function() {
   sky.saveColors({
     url: webcam_url, 
-    file: colors_file, 
+    file: color_file, 
     keep: 20,
     onRefresh: function(new_color_sets) {
       io.sockets.emit('refreshColors', new_color_sets);
