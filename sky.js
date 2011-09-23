@@ -31,6 +31,10 @@ var downloadFile = function(url, callback) {
 }
 
 module.exports = {
+  
+  getColors: function(color_file) {
+    return JSON.parse(fs.readFileSync(color_file));
+  },
 
   saveColors: function(options) {
     var url = options.url, 
