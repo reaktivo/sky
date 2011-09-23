@@ -7,7 +7,7 @@ var express = require('express');
 var expose = require('express-expose');
 
 var app = module.exports = express.createServer();
-var io = require('socket.io').listen(app);
+var io = require('socket.io').listen(9998);
 
 
 // Configuration

@@ -61,7 +61,7 @@ var SkyClient = new Class({
 
   getSocket: function() {
     if( !window.socket ) {
-      window.socket = io.connect();
+      window.socket = io.connect(null, {port: 9998});
     }
     return window.socket;
   },
