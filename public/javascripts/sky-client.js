@@ -79,6 +79,9 @@ var SkyClient = new Class({
 
 
 if(express && express.color_sets) {
-  if( !window.app ) window.app = {};
-  app.sky = new SkyClient(express.color_sets);
+  window.addEvent('domready', function() {
+    if( !window.app ) window.app = {};
+    app.sky = new SkyClient(express.color_sets);
+  })
+  
 }
